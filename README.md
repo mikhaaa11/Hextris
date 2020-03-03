@@ -105,7 +105,7 @@ Password: admin123
 - <https://github.com/Hextris/hextris>
 
 # Sitasi
-
+```bash
 @misc{engstrom2015hextris,
     author = {Logan Engstrom, Garrett Finucane, Noah Moroze, Michael Yang},
     title = {hextris},
@@ -113,3 +113,4 @@ Password: admin123
     howpublished = {\url{https://github.com/hextris/hextris/}},
     note = {commit xxxxxxx}
   }
+```
