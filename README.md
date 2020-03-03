@@ -1,8 +1,6 @@
-![Calibre-web](https://raw.githubusercontent.com/husnarfh/calibre-web/master/calibre.PNG)
+![Hextris](Hextris.jpg)
 
 # Sekilas Tentang
-Calibre-Web merupakan sebuah aplikasi berbasis web yang menyediakan interface untuk melakukan pencarian, membaca dan mengunduh ebooks menggunakan database Calibre yang sudah ada.
-
 Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tetris, hanya saja dengan enam sisi yang harus diisi. Bila pemain dapat menyusun 3 atau lebih blok secara horizontal atau vertikal maka blok tersebut akan menghilang dan pemain mendapatkan poin, permainan berakhir apabila salah satu dari keenam sisi terisi penuh.
 
 # Control
@@ -15,8 +13,8 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
 
 # Instalasi
   Requirements : 
-  Untuk menginstall Calibre-Web membutuhkan beberapa hal, yaitu :
-  1. Python 2.7+, python 3.x+
+  Untuk menginstall Hextris membutuhkan beberapa hal, yaitu :
+  1. HTML5
   2. requirements.txt yang berisi :
   - Babel>=1.3
   - Flask-Babel>=0.11.1
@@ -53,7 +51,14 @@ Tujuannya adalah agar VM bisa diakses dari luar melalui alamat IP host (localhos
 3. Instalasi LAMP (Linux Apache MySQL PHP)
   ```bash
 # akses vm dari host
-ssh student@localhost -p 2222
+ssh student@localhost -p 2200
+
+# set repo
+sudo tee /etc/apt/sources.list << !
+deb http://repo.apps.cs.ipb.ac.id/ubuntu bionic          main restricted universe multiverse
+deb http://repo.apps.cs.ipb.ac.id/ubuntu bionic-updates  main restricted universe multiverse
+deb http://repo.apps.cs.ipb.ac.id/ubuntu bionic-security main restricted universe multiverse
+!
 
 # instal apache, mysql, php
 sudo apt update
@@ -62,13 +67,9 @@ sudo apt install apache2 php mysql-server
 sudo apt install php-mysql php-gd php-mbstring php-xml php-curl
 sudo service apache2 restart
   ```
-4. Karena requirement untuk menginstal calibre-web butuh Python 2.7+, python 3.x+, maka dilakukan instalasi
-```bash
-sudo apt-get install python
-sudo apt-get install python3
-```
 
-## Instalasi Calibre-Web
+
+## Instalasi Hextris
 1. Instal dependensi dengan menjalankan `pip install --target vendor -r requirements.txt.`
 2. Jalankan perintah: `python cps.py` (atau `nohup python cps.py` - Direkomendasikan jika ingin menutup terminal windows)
 3. Arahkan browser ke <http://localhost:8083> atau <http://localhost:8083/opds> untuk OPDS catalog
@@ -80,62 +81,6 @@ Username: admin
 Password: admin123
 ```
 
-# Cara Pemakaian
-- Tampilan aplikasi web:
-
-![tampilan](pict/2.png)
-
-- Fitur-fitur yang terdapat dalam calibre adalah sebagai berikut:
-1. Library Management
-
-  Calibre dapat mengurutkan buku berdasarkan: Judul, Penulis, Tanggal dimasukkan, Tanggal diterbitkan, Ukuran, Rating, Seri, dan lain-lain. Serta mendukung metode pencarian: tags, komentar dan advanced search. Selain itu, calibre dapat terhubung ke internet untuk menemukan buku berdasarkan judul, pengarang atau ISBN. Dan dapat mengunduh berbagai jenis metadata dan cover buku secara otomatis.
-  
-2. Mendownload berita dari web dan mengubahnya ke dalam bentuk e-book
-
-  Calibre secara otomatis dapat mengambil berita dari website atau RSS feed, mengonversinya menjadi e-book dan mengunggahnya. E-book tersebut merupakan versi lengkap dari artikel, bukan hanya ringkasan.
-  
-3. Konversi e-book
-  
-  Calibre dapat mengonversi dalam berbagai format. Fitur dalam konversi e-book yaitu dapat mengatur ulang ukuran semua font, memastikan output e-book dapat dibaca, dan dapat mendeteksi atau membuat struktur buku.
-  
-Input Format: CBZ, CBR, CBC, CHM, EPUB, FB2, HTML, MENYALA, LRF, MOBI, ODT, PDF, RRC, PDB, PML, RB, RTF, SNB, TCR, TXT
-
-Output Format: EPUB, FB2, OEB, MENYALA, LRF, MOBI, PDB, PML, RB, PDF, SNB, TCR, TXT
-
-4. Memiliki server untuk mengakses koleksi e-book secara online
-  
-  Calibre mempunyai web server yang memungkinkan untuk mengakses koleksi e-book secara online. Calibre juga dapat mengirim e-book melalui e-mail dan mengunduh berita secara otomatis. Calibre juga mendukung perangkat mobile.
-
-5. Sinkronisasi ke perangkat pembaca e-book
-  
-  Calibre memiliki driver perangkat desain modular yang menambah dukungan untuk perangkat e-reader yang berbeda. Proses sinkronisasinya yaitu calibre dapat memperbarui metadata koleksi berdasarkan tag yang didefinisikan di perpustakaan. Jika sebuah buku memiliki lebih dari satu format yang tersedia, calibre secara otomatis memilih format terbaik ketika mengunggah ke perangkat. Jika tidak ada format yang sesuai, secara otomatis calibre akan mengonversi e-book ke format yang sesuai untuk perangkat sebelum mengirimnya.
-
-- Hasil screenshot website Calibre:
-  - Tampilan login.
-  
-    ![login](pict/3.png)
-    
-  - Tampilan utama website.
-  
-    ![tampilan utama](pict/4.png)
-  
-  - Tampilan saat memilih buku.
-  
-    ![memilih buku](pict/5.png)
-  
-  - Tampilan saat mengedit informasi terkait buku.
-  
-    ![edit](pict/6.png)
-  
-  - Tampilan advanced search.
-  
-    ![search](pict/7.png)
-  
-  - Tampilan untuk mengupload.
-  
-    ![upload1](pict/8.png)
-  
-    ![upload2](pict/9.png)
     
 # Pembahasan
 
@@ -157,7 +102,14 @@ Output Format: EPUB, FB2, OEB, MENYALA, LRF, MOBI, PDB, PML, RB, PDF, SNB, TCR, 
   
  # Referensi
 - <https://github.com/auriza>
-- <https://github.com/janeczku/calibre-web>
-- <https://calibre-ebook.com/>
-- <https://syafruldzulfikarfajri.blogspot.com/2014/02/makalah-calibre.html>
-- <https://donyprisma.wordpress.com/2012/07/05/calibre-e-book-management/>
+- <https://github.com/Hextris/hextris>
+
+# Sitasi
+
+@misc{engstrom2015hextris,
+    author = {Logan Engstrom, Garrett Finucane, Noah Moroze, Michael Yang},
+    title = {hextris},
+    year = {2015},
+    howpublished = {\url{https://github.com/hextris/hextris/}},
+    note = {commit xxxxxxx}
+  }
