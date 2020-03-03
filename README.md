@@ -19,7 +19,8 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
   3. HTML5
   
 # Konfigurasi
- 
+  - Dapat mengupload 
+  - Dapat registrasi secara publik
   
 # Otomatisasi
 
