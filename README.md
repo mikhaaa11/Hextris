@@ -27,10 +27,15 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
 ## Instalasi Web Server Virtual
 1. Membuat VM Ubuntu Server
 Membuat VM baru pada VirtualBox dengan tipe "Ubuntu 64-bit", menggunakan virtual disk Ubuntu Server 18.04.
+![Membuat VM](Screenshot-1.png)
+![Membuat VM2](Screenshot-2.png)
+
+
+
 2. Setting Port-Forwarding VM
 Tujuannya adalah agar VM bisa diakses dari luar melalui alamat IP host (localhost). Masuk ke 'Settings -> Network -> Advanced -> Port Forwarding' lalu ditambahkan dua aturan berikut.
 
-  ![instalasi](pict/1.png)
+  ![Port-Forwarding](Screenshot-3.png)
 
 3. Instalasi LAMP (Linux Apache MySQL PHP)
   ```bash
@@ -54,10 +59,11 @@ sudo service apache2 restart
 
 
 ## Instalasi Hextris
-1. Lakukan cd ke /www/
+1. Lakukan cd ke var/www/html
 2. Lakukan git clone <https://github.com/Hextris/hextris.git> 
 3. Arahkan browser ke <http://localhost:8000/Hextris>
 
+![Instalasi Hextris](Screenshot-8.png)
     
 # Pembahasan
 
