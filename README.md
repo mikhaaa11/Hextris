@@ -14,29 +14,10 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
 # Instalasi
   Requirements : 
   Untuk menginstall Hextris membutuhkan beberapa hal, yaitu :
-  1. HTML5
-  2. requirements.txt yang berisi :
-  - Babel>=1.3
-  - Flask-Babel>=0.11.1
-  - Flask-Login>=0.3.2
-  - Flask-Principal>=0.3.2
-  - singledispatch>=3.4.0.0
-  - backports_abc>=0.4
-  - Flask>=0.11
-  - iso-639>=0.4.5
-  - PyPDF2==1.26.0
-  - pytz>=2016.10
-  - requests>=2.11.1
-  - SQLAlchemy>=1.1.0
-  - tornado>=4.1
-  - Wand>=0.4.4
-  - unidecode>=0.04.19
-  3. metadata.db (database) yang berasal dari aplikasi Calibre Library yang dapat didownload dan diinstall [disini](https://calibre-ebook.com/download)
-  4. Amazon's KindleGen untuk fitur konversi buku
-    
-# Konfigurasi
-  - Dapat mengupload 
-  - Dapat registrasi secara publik
+  1. Apache2
+  2. PHP
+  3. HTML5
+ 
   
 # Otomatisasi
 
@@ -70,16 +51,9 @@ sudo service apache2 restart
 
 
 ## Instalasi Hextris
-1. Instal dependensi dengan menjalankan `pip install --target vendor -r requirements.txt.`
-2. Jalankan perintah: `python cps.py` (atau `nohup python cps.py` - Direkomendasikan jika ingin menutup terminal windows)
-3. Arahkan browser ke <http://localhost:8083> atau <http://localhost:8083/opds> untuk OPDS catalog
-4. Atur `Location of Calibre database` ke folder penempatan Calibre library (metadata.db), tekan tombol “submit”
-5. Masuk ke halaman Login
-```bash
-Default admin login:
-Username: admin
-Password: admin123
-```
+1. Lakukan cd ke /www/
+2. Lakukan git clone <https://github.com/Hextris/hextris.git> 
+3. Arahkan browser ke <http://localhost:8000/Hextris>
 
     
 # Pembahasan
