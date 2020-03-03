@@ -17,6 +17,8 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
   1. Apache2
   2. PHP
   3. HTML5
+  
+# Konfigurasi
  
   
 # Otomatisasi
