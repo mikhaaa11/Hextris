@@ -3,6 +3,15 @@
 # Sekilas Tentang
 Calibre-Web merupakan sebuah aplikasi berbasis web yang menyediakan interface untuk melakukan pencarian, membaca dan mengunduh ebooks menggunakan database Calibre yang sudah ada.
 
+Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tetris, hanya saja dengan enam sisi yang harus diisi. Bila pemain dapat menyusun 3 atau lebih blok secara horizontal atau vertikal maka blok tersebut akan menghilang dan pemain mendapatkan poin, permainan berakhir apabila salah satu dari keenam sisi terisi penuh.
+
+# Control
+| Tombol Keyboard | Fungsi |
+| ----- | ----- |
+| Arrow Left atau A | Memutar Hexagon ke kiri |
+| Arrow Right atau D | Memutar Hexagon ke kanan |
+| Arrow Down atau S | Mempercepat blok turun |
+
 
 # Instalasi
   Requirements : 
