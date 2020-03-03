@@ -66,8 +66,7 @@ sudo service apache2 restart
 4. Arahkan browser ke <http://localhost:8000/Hextris>
 
   ![Instalasi Hextris](Screenshot-8.png)
-    
-# Pembahasan
+
 
 # Anggota Kelompok
 | Nama | NIM | 
