@@ -19,8 +19,8 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
   3. HTML5
   
 # Konfigurasi
-  - Dapat mengupload 
-  - Dapat registrasi secara publik
+  - Dapat men-share score ke facebook dan twitter
+  - Dapat membuka play store dan apps store
   
 # Otomatisasi
 
@@ -57,32 +57,26 @@ sudo apt install php-mysql php-gd php-mbstring php-xml php-curl
 sudo service apache2 restart
   ```
 
+  ![Apache](Screenshot-7.png)
 
 ## Instalasi Hextris
-1. Lakukan cd ke var/www/html
-2. Lakukan git clone <https://github.com/Hextris/hextris.git> 
-3. Arahkan browser ke <http://localhost:8000/Hextris>
+1. Lakukan cd ke /var/www/html
+2. Kemudian tuliskan command ls
+3. Lakukan git clone <https://github.com/Hextris/hextris.git> 
+4. Arahkan browser ke <http://localhost:8000/Hextris>
 
-![Instalasi Hextris](Screenshot-8.png)
+  ![Instalasi Hextris](Screenshot-8.png)
     
 # Pembahasan
 
-- Kelebihan
-  - Lebih praktis dan ringan
-  - Dapat disimpan dalam jangka waktu yang lama dengan kemungkinan kerusakan yang minim
-  - Distribusinya yang cepat dan mudah karena memanfaatkan jaringan internet
-  - Cenderung lebih murah dibanding buku cetak
-  
-- Kekurangan
-  - Bergantung dengan sumber daya listrik
-  - Perangkat pembaca yang masih mahal
-  - Terkait dengan masalah hak cipta
-  
-  *Aplikasi sejenis* : Google Play Books
-  Banyak perbedaan antara Google Play Books dengan Calibre Web, yaitu :
-  1. Masalah hak cipta
-  2. Banyak fitur saat kegiatan membaca, misalnya mengubah warna background, menandai halaman, dan menyimpan kutipan.
-  
+# Anggota Kelompok
+| Nama | NIM | 
+| ----- | ----- |
+| Mickael | G64170039 | 
+| Dharmawan Siswanto | G64170061 | 
+| Daffa Wicaksono | G64170066 | 
+| Muhamad Alif Hanif F | G64170084 | 
+
  # Referensi
 - <https://github.com/auriza>
 - <https://github.com/Hextris/hextris>
