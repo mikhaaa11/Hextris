@@ -1,10 +1,15 @@
-![Hextris](Hextris.jpg)
+<p align="center">
+  <a href="">
+    <img src="https://github.com/mikhaaa11/NonstopDefense/blob/master/Nonstop%20Defense%20Project/Assets/Images/Ahn%20Yujin.jpg" alt="Ahn Yujin" width=100 height=100>
+  </a>
+</p>
 
 <p align="center">
   <a href="">
-    <img src="https://github.com/mikhaaa11/NonstopDefense/blob/master/Nonstop%20Defense%20Project/Assets/Images/Ahn%20Yujin.jpg" alt="Nonstop Defense" width=100 height=100>
+    <img src="Hextris.jpg" alt="Hextris">
   </a>
 </p>
+![Hextris](Hextris.jpg)
 
 # Sekilas Tentang
 Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tetris, hanya saja dengan enam sisi yang harus diisi. Bila pemain dapat menyusun 3 atau lebih blok secara horizontal atau vertikal maka blok tersebut akan menghilang dan pemain mendapatkan poin, permainan berakhir apabila salah satu dari keenam sisi terisi penuh.
@@ -25,7 +30,8 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
   3. HTML5
   
 # Konfigurasi
-  
+  - Dapat men-share score ke facebook dan twitter
+  - Dapat membuka play store dan apps store
   
 # Otomatisasi
 
