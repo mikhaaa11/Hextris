@@ -60,7 +60,7 @@ sudo service apache2 restart
 
 ## Instalasi Hextris
 1. Lakukan cd ke /var/www/html
-2. Kemudian tuliskan command ls
+2. Kemudian tuliskan command ls untuk cek list konten direktori tersebut
 3. Lakukan git clone <https://github.com/Hextris/hextris.git> 
 4. Arahkan browser ke <http://localhost:8000/Hextris>
 
