@@ -22,11 +22,8 @@ Hextris merupakan sebuah permainan berbasis web yang memiliki konsep seperti tet
   2. PHP
   3. HTML5
   
-# Konfigurasi
-  - Dapat men-share score ke facebook dan twitter
-  - Dapat membuka play store dan apps store
   
-# Otomatisasi
+# Konfigurasi
 
 ## Instalasi Web Server Virtual
 1. Membuat VM Ubuntu Server
